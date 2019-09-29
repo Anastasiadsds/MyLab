@@ -108,7 +108,7 @@ import java.io.IOException;
 
             for (Gamer gamer : gamers) {
                 gamer.welcome();
-                System.out.println(String.format("Информации о сотруднике: имя - %s, должность - %s.", gamer.getName(), gamer.getLevel()));
+                System.out.println(String.format("Информации об игроке: имя - %s, уровень - %s.", gamer.getName(), gamer.getLevel()));
             }
             return gamers;
         }
