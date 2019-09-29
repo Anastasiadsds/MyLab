@@ -101,20 +101,9 @@ import java.io.IOException;
                     System.out.println("Ошибка при импорте игрока. Возможно, игрок имеет невозможный возраст");
                     //throw new Exception();
                 }
-                //Gamer gamer1 = new Gamer(attributes.getNamedItem("name").getNodeValue(), attributes.getNamedItem("level").getNodeValue());
+
                 gamers.add(new Gamer(attributes.getNamedItem("name").getNodeValue(), attributes.getNamedItem("level").getNodeValue()));
-                /*NodeList gamerSkills = gamerDocument.getDocumentElement().getElementsByTagName("skill");
-                if (gamerSkills.getLength() > 0) {
-                    Node skill = gamerSkills.item(0);
-                    NamedNodeMap skillAttributes = skill.getAttributes();
-                    if (skillAttributes.getNamedItem("act").getNodeValue() == null) {
-                        System.out.println("Игрок имеет пустой навык. Навык не будет добавлен");
-                        break;
-                    }
-                    else {
-                        gamer1.addSkill(new Skill(skillAttributes.getNamedItem("name").getNodeValue(), skillAttributes.getNamedItem("act").getNodeValue()));
-                    }
-                }*/
+
             }
 
             for (Gamer gamer : gamers) {
