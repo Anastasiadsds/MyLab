@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<World>
+    <name>Wonderful World</name>
+    <Locations>
+        <location earth="The Hundred Acre Wood">
+            <gamers>
+                <gamer name="Winny" level="10"/>
+                <gamer name="Rabbit" level="5" />
+                <gamer name="Baby Ru" level="10" />
+                <gamer name="Tiger" level="20" />
+            </gamers>
+        </location>
+    </Locations>
+</World>
